@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaira – traces of what matters</title>
+<meta name="description" content="Kaira ist ein Tagebuch in Wochen: ein Moment pro Woche, die Menschen, die dir wichtig sind, und ihre Geburtstage.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%23E09A2E'/></svg>">
+<style>
+:root{
+  --paper:#F2F4F6; --ink:#1A2330; --muted:#5A6473; --line:#D5DAE1; --dot:#DCE1E7;
+  --amber:#E09A2E; --rose:#D35F76; --teal:#2F9187; --link:#2F6F8F;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#11161D; --ink:#E4E8EE; --muted:#97A1AF; --line:#2A323D; --dot:#232B36;
+    --amber:#F0B04C; --rose:#E77A8F; --teal:#4FB3A8; --link:#7FB8D4;
+    color-scheme:dark;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+}
+.wrap{max-width:40rem; margin:0 auto; padding:0 1.5rem}
+header.top{display:flex; justify-content:space-between; align-items:baseline; padding:1.5rem 0 0}
+.brand{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; font-size:1.25rem; color:var(--ink); text-decoration:none; letter-spacing:.01em}
+nav a{color:var(--muted); text-decoration:none; margin-left:1.1rem; font-size:.94rem}
+nav a:hover, nav a[aria-current]{color:var(--ink)}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--link); outline-offset:3px; border-radius:2px}
+h1,h2{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; font-weight:normal; line-height:1.2}
+h1{font-size:2.4rem; margin:3rem 0 .6rem}
+h2{font-size:1.45rem; margin:2.6rem 0 .5rem}
+h3{font-size:1rem; margin:1.8rem 0 .25rem}
+p,li{margin:.5rem 0}
+.lead{font-size:1.15rem; color:var(--muted)}
+.small{font-size:.9rem; color:var(--muted)}
+.mail{font-size:1.2rem}
+footer{border-top:1px solid var(--line); margin-top:4rem; padding:1.5rem 0 2.5rem; font-size:.9rem; color:var(--muted)}
+footer a{color:var(--muted); margin-right:1.1rem}
+
+/* Startseite */
+.hero{padding:3.5rem 0 1rem}
+.word{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; font-size:clamp(4rem,18vw,7.5rem); line-height:.95; margin:0; letter-spacing:-.01em; font-weight:normal}
+.tag{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; font-style:italic; font-size:1.35rem; color:var(--muted); margin:.4rem 0 0}
+.weeks{display:grid; grid-template-columns:repeat(26,1fr); gap:5px; margin:2.8rem 0 .7rem; max-width:34rem}
+.weeks span{aspect-ratio:1; border-radius:50%; background:var(--dot)}
+.weeks .a{background:var(--amber); box-shadow:0 0 8px var(--amber)}
+.weeks .r{background:var(--rose); box-shadow:0 0 8px var(--rose)}
+.weeks .t{background:var(--teal); box-shadow:0 0 8px var(--teal)}
+.weeks .now{background:transparent; box-shadow:inset 0 0 0 2px var(--ink)}
+.cap{font-size:.88rem; color:var(--muted); margin:0}
+.feature{border-left:2px solid var(--line); padding-left:1.1rem; margin:2rem 0}
+.feature h2{margin-top:0}
+.soon{display:inline-block; margin-top:1.4rem; padding:.55rem 1rem; border:1px solid var(--ink); border-radius:999px; font-size:.95rem}
+@media (max-width:30rem){ .weeks{gap:3px} h1{font-size:2rem} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="brand" href="index.html">Kaira</a><nav><a href="support.html">Support</a><a href="privacy.html">Datenschutz</a></nav></header>
+<main>
+
+<section class="hero">
+<p class="word">Kaira</p>
+<p class="tag">traces of what matters</p>
+<div class="weeks" aria-hidden="true"><span></span><span class="t"></span><span class="t"></span><span class="t"></span><span class="t"></span><span></span><span class="r"></span><span class="a"></span><span></span><span class="t"></span><span class="a"></span><span></span><span></span><span class="t"></span><span></span><span></span><span class="a"></span><span></span><span class="a"></span><span></span><span></span><span></span><span class="t"></span><span></span><span></span><span></span><span class="a"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="r"></span><span></span><span></span><span></span><span></span><span></span><span class="r"></span><span></span><span></span><span></span><span></span><span></span><span class="t"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="t"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="r"></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="a"></span><span class="t"></span><span></span><span></span><span></span><span></span><span class="r"></span><span></span><span></span><span></span><span class="t"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="t"></span><span class="a"></span><span></span><span></span><span></span><span></span><span class="a"></span><span></span><span class="r"></span><span></span><span></span><span></span><span class="r"></span><span></span><span></span><span></span><span class="now"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<p class="cap">Jeder Punkt ist eine Woche. Die leuchtenden sind die, an die du dich erinnern willst.</p>
+</section>
+
+<p class="lead">Kaira ist ein Tagebuch in Wochen. Statt langer Einträge hältst du fest, was eine Woche ausgemacht hat – mit einem Foto oder einem einzigen Satz.</p>
+
+<div class="feature">
+<h2>Deine Wochen</h2>
+<p>Ein Raster zeigt deine Zeit auf einen Blick. Halte Momente fest, verknüpfe sie mit den Menschen, die dabei waren, und erkenne mit farbigen Lichtern und Filtern, was deine Wochen prägt.</p>
+</div>
+
+<div class="feature">
+<h2>Deine Liebsten</h2>
+<p>Sammle Ideen für die Menschen, die dir nahestehen, lass dich erinnern, wieder einmal anzurufen, und verpasse keinen Geburtstag mehr.</p>
+</div>
+
+<div class="feature">
+<h2>Perspektive</h2>
+<p>Die Lebensansicht in Jahresblöcken zeigt, wie viel Zeit hinter und vor dir liegt. „Diese Woche“ holt dich sanft ins Jetzt zurück.</p>
+</div>
+
+<p>Kaira ist kein soziales Netzwerk. Keine Likes, keine Follower, keine Werbung. Deine Einträge bleiben auf deinem iPhone.</p>
+<span class="soon">Bald im App Store für iPhone</span>
+
+</main>
+<footer>
+<a href="support.html">Support</a><a href="privacy.html">Datenschutz</a>
+<p>© 2026 AldeRava GmbH, Via Ronchetto di Orlino 29, 6963 Lugano · <a href="mailto:kaira@alderava.ch">kaira@alderava.ch</a></p>
+</footer>
+</div>
+</body>
+</html>

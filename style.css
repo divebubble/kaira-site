@@ -1,0 +1,81 @@
+:root {
+  --bg: #1D1419;
+  --bg-2: #261B22;
+  --dot: #3A2D35;
+  --text: #F4EFE9;
+  --muted: #BDACB9;
+  --line: #3A2D35;
+  --serif: "Times New Roman", Times, "Songti SC", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans", sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle, var(--dot) 1.6px, transparent 2px);
+  background-size: 22px 22px;
+  color: var(--text);
+  font: 17px/1.6 var(--sans);
+}
+a { color: var(--text); text-decoration-color: rgba(244, 239, 233, .35); text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+.top, main, footer { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; padding-top: 20px; padding-bottom: 20px; }
+.brand { font: 30px/1 var(--serif); text-decoration: none; letter-spacing: .01em; }
+.top nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.top nav a { text-decoration: none; color: var(--muted); }
+.top nav a[aria-current], .top nav a:hover { color: var(--text); }
+
+.hero { text-align: center; padding-bottom: 24px; }
+.hero-img { display: block; width: 100%; height: auto; border-radius: 20px; }
+.promo { font: 24px/1.45 var(--serif); max-width: 680px; margin: 32px auto 24px; }
+.req { color: var(--muted); font-size: 15px; margin: 12px 0 0; }
+.badge { display: inline-block; line-height: 0; }
+.badge img { height: 50px; width: auto; }
+
+.intro { background: var(--bg); }
+.intro p { font-size: 19px; max-width: 680px; margin: 40px auto; text-align: center; color: var(--muted); }
+
+.shots { overflow-x: auto; margin: 0 -16px; padding: 8px 16px 24px; scrollbar-width: none; }
+.shots::-webkit-scrollbar { display: none; }
+.strip { display: flex; gap: 16px; justify-content: center; min-width: max-content; }
+.strip img { width: 220px; height: auto; border-radius: 26px; border: 1px solid var(--line); background: var(--bg-2); }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin: 32px 0; }
+.feature { background: var(--bg-2); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px 8px; }
+.feature h2 { font: 600 13px/1.3 var(--sans); letter-spacing: .12em; margin: 12px 0 6px; color: var(--muted); }
+.feature p { margin: 0 0 16px; }
+.dot { display: block; width: 14px; height: 14px; border-radius: 50%; background: var(--c); box-shadow: 0 0 14px var(--c); }
+.cta { text-align: center; padding: 16px 0 48px; }
+
+.doc { max-width: 720px; margin: 16px auto 48px; background: var(--bg); padding: 8px 0; }
+.doc h1 { font: 40px/1.15 var(--serif); margin: 16px 0 8px; }
+.doc h2 { font: 24px/1.3 var(--serif); margin: 36px 0 8px; }
+.doc .meta { color: var(--muted); margin-top: 0; }
+.doc ul { padding-left: 1.2em; }
+.doc li { margin: 4px 0; }
+.contact { font-size: 19px; }
+details { border-top: 1px solid var(--line); padding: 14px 0; }
+details:last-of-type { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 10px 0 0; color: var(--muted); }
+
+footer { border-top: 1px solid var(--line); padding-top: 24px; padding-bottom: 40px; color: var(--muted); font-size: 14px; background: var(--bg); }
+footer a { color: var(--muted); }
+.langs { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 12px; }
+.langs a { text-decoration: none; }
+.langs a[aria-current] { color: var(--text); text-decoration: underline; }
+
+.chooser main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.chooser .brand { font-size: 64px; margin: 0 0 24px; }
+.chooser-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: center; }
+
+@media (max-width: 600px) {
+  .promo { font-size: 20px; }
+  .brand { font-size: 26px; }
+  .top nav { font-size: 15px; }
+  .doc h1 { font-size: 32px; }
+  .strip { justify-content: flex-start; }
+  .strip img { width: 180px; }
+}
